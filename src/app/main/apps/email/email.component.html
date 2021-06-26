@@ -1,0 +1,30 @@
+<div class="content-area-wrapper">
+  <!-- sidebar Left -->
+  <core-sidebar
+    class="sidebar-left"
+    name="email-sidebar"
+    overlayClass="body-content-overlay"
+    collapsibleSidebar="bs-gt-lg"
+  >
+    <app-email-sidebar></app-email-sidebar>
+  </core-sidebar>
+
+  <!--/ sidebar Left -->
+
+  <!-- content-right -->
+  <div class="content-right">
+    <app-email-compose></app-email-compose>
+    <div class="content-wrapper">
+      <div class="content-body">
+        <!-- email list -->
+        <app-email-list></app-email-list>
+        <!-- email list -->
+
+        <!-- email details -->
+        <app-email-details></app-email-details>
+        <!-- email details -->
+      </div>
+    </div>
+  </div>
+  <!--/ content-right -->
+</div>

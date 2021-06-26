@@ -1,0 +1,45 @@
+<div class="auth-wrapper auth-v2">
+    <div class="auth-inner row m-0">
+      <!-- Brand logo--><a class="brand-logo" href="javascript:void(0);">
+        <img src="{{ coreConfig.app.appLogoImage }}" alt="brand-logo" height="28" />
+        <h2 class="brand-text text-primary ml-1">Vuexy</h2></a
+      >
+      <!-- /Brand logo-->
+      <!-- Left Text-->
+      <div class="d-none d-lg-flex col-lg-8 align-items-center p-5">
+        <div class="w-100 d-lg-flex align-items-center justify-content-center px-5">
+          <img
+            class="img-fluid"
+            [src]="
+              coreConfig.layout.skin === 'dark'
+                ? 'assets/images/pages/register-v2-dark.svg'
+                : 'assets/images/pages/register-v2.svg'
+            "
+            alt="Register V2"
+          />
+        </div>
+      </div>
+      <!-- /Left Text-->
+      <!-- Register-->
+      <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
+          <h4 style="margin-left: 14px;" *ngIf="message">{{message}}</h4>
+          <p class="text-center mt-2">
+            <span>Back to login?</span
+            ><a routerLink="/pages/authentication/login-v2"><span>&nbsp;Back to login</span></a>
+          </p>
+          <div class="divider my-2">
+            <div class="divider-text">or</div>
+          </div>
+          <div class="auth-footer-btn d-flex justify-content-center">
+            <a class="btn btn-facebook" href="javascript:void(0)"><i data-feather="facebook"></i></a
+            ><a class="btn btn-twitter white" href="javascript:void(0)"><i data-feather="twitter"></i></a
+            ><a class="btn btn-google" href="javascript:void(0)"><i data-feather="mail"></i></a
+            ><a class="btn btn-github" href="javascript:void(0)"><i data-feather="github"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- /Register-->
+    </div>
+  </div>
+  
